@@ -16,13 +16,13 @@
                 <h1><span class="taco-span">Taco</span>Palace</h1>
             </div>
             <div class="gamatoto">
-                <div class="login-container">
-                    <input type="text" placeholder="email" required class="email"/>
-                    <button type="submit" class="login-button">Login</button>
+                <div class="login-container" id="loginContainer">
+                    <input type="email" placeholder="email" required class="email" id="login"/>
+                    <button type="button" class="login-button" id="loginButton">Login</button>
                 </div>
                 <div class="cart-container">
                     <img src="static/images/carrito.png" alt="cart" class="cart" />
-                    <p>0</p>
+                    <p id="foodCounter">0</p>
                 </div>
             </div>
         </nav>
@@ -68,8 +68,8 @@
                         <h3 class="section-left-subtitle">Contamos con <a href="#"><span class="servicio">servicio</span></a> a <span class="domicilio">domicilio</span></h3>
                     </div>
                 </div>
-                <div>
-                    <img src="static/images/comida-mexicana.jpg" alt="comida-mexicana" class="section-left-image"/>
+                <div id="imageContainer">
+                    <img src="static/images/comida-mexicana.jpg" alt="section-left-image" class="section-left-image"/>
                 </div>
             </div>
 <!-------------------------------------------------------------------------------------------->
@@ -83,7 +83,7 @@
                             <a href="#">Ver Más...</a>
                         </div>
                         <div>
-                            <button class="order-button">+</button>
+                            <button class="order-button" id="orderButton">+</button>
                         </div>
                     </div>
                 </div>
@@ -95,13 +95,14 @@
                             <a href="#">Ver Más...</a>
                         </div>
                         <div>
-                            <button class="order-button">+</button>
+                            <button class="order-button" id="orderButton2">+</button>
                         </div>
                     </div>
                 </div>
             </section>
         </div>
     </main>
+    <script src="static/js/script.js"></script>
 </body>
 
 </html>
